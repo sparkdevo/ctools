@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                sh 'http://www.cnblogs.com/sparkdev/p/8795141.html'
+                sh 'curl http://www.cnblogs.com/sparkdev/p/8795141.html'
             }
         }
     }
