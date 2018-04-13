@@ -1,0 +1,16 @@
+pipeline {
+    agent { 
+        dockerfile {
+            filename 'Dockerfile'
+            dir 'curl'
+            label 'docker'
+        }
+    }
+    stages {
+        stage('Test') {
+            steps {
+                sh 'http://www.cnblogs.com/sparkdev/p/8795141.html'
+            }
+        }
+    }
+}
